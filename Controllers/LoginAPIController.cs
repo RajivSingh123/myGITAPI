@@ -28,5 +28,26 @@ namespace myGITAPI.Controllers
 
             return Ok(response);
         }
+
+        [HttpGet("User")]
+        public async Task<IActionResult> GetUser()
+        {
+            List<string> userList = new List<string>
+            {
+                "user1",
+                "user2",
+                "user3"
+            };
+
+
+            var response = new
+            {
+                success = true,
+                message = "User list fetched successfully.",
+                data = userList
+            };
+
+            return Ok(response);
+        }
     }
 }
