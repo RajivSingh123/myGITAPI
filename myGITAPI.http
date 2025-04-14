@@ -1,0 +1,6 @@
+@myGITAPI_HostAddress = http://localhost:5123
+
+GET {{myGITAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
